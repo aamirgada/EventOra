@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#474551", "on-secondary-container": "#5d577c", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#c8bfff", "on-secondary": "#ffffff", "outline-variant": "#c9c4d3", "surface-tint": "#5d51ac", "on-background": "#1a1930", "primary-container": "#30217d", "secondary-fixed-dim": "#cac1ec", "tertiary": "#1d1b2d", "secondary": "#605a7f", "surface": "#fcf8ff", "outline": "#787583", "surface-container": "#efebff", "surface-dim": "#dad7f6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "tertiary-container": "#323043", "primary-fixed": "#e5deff", "tertiary-fixed": "#e4dff9", "tertiary-fixed-dim": "#c8c3dd", "inverse-on-surface": "#f2eeff", "on-error": "#ffffff", "inverse-primary": "#c8bfff", "on-primary-fixed-variant": "#453893", "surface-bright": "#fcf8ff", "inverse-surface": "#2f2e46", "on-tertiary-container": "#9b97af", "on-tertiary-fixed-variant": "#474459", "on-surface": "#1a1930", "on-tertiary-fixed": "#1b192c", "on-secondary-fixed-variant": "#484266", "background": "#fcf8ff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#e3dfff", "on-primary-fixed": "#180064", "on-primary": "#ffffff", "surface-container-low": "#f6f2ff", "primary": "#1a0069", "surface-container-high": "#e9e5ff", "secondary-container": "#d8cffb", "secondary-fixed": "#e6deff", "surface-variant": "#e3dfff", "on-secondary-fixed": "#1c1738", "on-primary-container": "#9a8eee" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter-lg": "2rem", "space-xs": "0.5rem", "gutter": "1.5rem", "margin-sm": "1rem", "space-2xl": "3rem", "space-3xl": "4.5rem", "margin-lg": "3rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-sm": "1rem", "space-sm": "0.75rem", "margin": "1.5rem", "space-2xs": "0.25rem" }, "fontFamily": { "label-md": ["Inter"], "display-hero": ["Manrope"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Manrope"], "display-hero-mobile": ["Manrope"], "headline-lg": ["Manrope"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Manrope"], "headline-md": ["Manrope"], "body-sm": ["Inter"] }, "fontSize": { "label-md": ["0.8125rem", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "1.1", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["1rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["0.9375rem", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,33,125,0.05)] transition-all"><div class="h-20 max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold leading-none">Eventora</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:block">Discover. Book. Experience.</span></div></div><nav class="hidden lg:flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-space-2xs rounded-full shadow-[0_1px_3px_rgba(48,33,125,0.03)]" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#">Home</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="explore-events" href="#">Explore Events</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="categories" href="#">Categories</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="my-tickets" href="#">My Tickets</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="organizer-studio" href="#">Organizer Studio</a></nav><div class="flex items-center gap-space-xs sm:gap-space-sm"><button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center leading-none">3</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><a class="hidden xl:inline-flex items-center justify-center px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-[0_4px_16px_rgba(48,33,125,0.15)]" data-path="create-event" href="#">Get Started</a><div class="flex items-center pl-space-2xs"><button class="flex items-center rounded-full p-0.5 hover:ring-2 hover:ring-secondary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbvONSaQOhFyJr6QKjPcsM705KAKvkam3OeWOHKOgGyd9TgB7FV9M6ML1s1X69ZwRKukhTm9aTdmLbkxNVFo_CXuSFbN08l9aZk8neRGVSlME6kvHXUZ4WaH-JyytDUmDJw6Dyyr1_MC9P9DXXeNxLceOfiAwVgZyyacZHoIgQtBJbYTAdiUsRK5CYbiT6ivqNQFunS3WwECt6aeA8Wd0f_5G2wuGm68Y7US37c3jQHeqg4I_4Y-X2Pw"/></button></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow Background Shapes -->
+<div class="relative w-full overflow-hidden pb-space-3xl">
+<div class="absolute -top-32 left-1/4 w-96 h-96 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-10 w-[30rem] h-[30rem] rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg">
+<!-- Top Title and Metrics Mosaic Bar -->
+<section class="pt-space-xl pb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/60 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              Verified Attendee Vault
+            </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+              My Tickets &amp; Passes
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              View your active digital admissions, past experiences, and download passes for instant mobile check-in.
+            </p>
+</div>
+<!-- Quick Actions & Offline Status -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+<span class="font-label-md text-label-md text-on-surface">Offline Passes Cached</span>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors shadow-sm" onclick="toggleHelpDrawer(true)">
+<span class="material-symbols-outlined text-[18px]">help_center</span>
+<span>Check-in Guidelines</span>
+</button>
+</div>
+</div>
+<!-- Segmented Tab Navigation -->
+<div class="mt-space-xl flex items-center justify-between border-b-0 pb-1">
+<div class="inline-flex p-1.5 rounded-full bg-surface-container-low shadow-sm">
+<button class="px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-space-xs" id="tab-upcoming" onclick="switchTab('upcoming')">
+<span>Upcoming Tickets</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-sm text-label-sm">2</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="tab-past" onclick="switchTab('past')">
+<span>Past Events</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">6</span>
+</button>
+<button class="px-space-lg py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="tab-cancelled" onclick="switchTab('cancelled')">
+<span>Cancelled &amp; Refunded</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">1</span>
+</button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>256-bit Encrypted Admission Tokens</span>
+</div>
+</div>
+</section>
+<!-- CONTENT PANELS -->
+<div class="space-y-space-xl" id="panel-upcoming">
+<!-- Primary Ticket Card (Pass 1 - VIP Boarding Pass Style) -->
+<div class="relative bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
+<!-- Ambient gradient hairline overlay on card top -->
+<div class="h-2 w-full bg-gradient-to-r from-primary via-primary-container to-secondary-container"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
+<!-- Main Boarding Pass Core (8 Cols) -->
+<div class="lg:col-span-8 p-space-lg md:p-space-xl flex flex-col justify-between">
+<div>
+<!-- Status & Tier Badges Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wide">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                      Confirmed &amp; Valid
+                    </span>
+<span class="inline-flex items-center px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                      Express Turnstile Entry
+                    </span>
+</div>
+<div class="flex items-center gap-space-xs font-mono font-label-md text-label-md text-on-surface-variant bg-surface-container-low px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary">confirmation_number</span>
+<span>Ref: #EVT-2025-883491</span>
+</div>
+</div>
+<!-- Event Details & Imagery Banner -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center mb-space-lg">
+<div class="md:col-span-4 rounded-xl overflow-hidden shadow-sm aspect-video md:aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="Electronic music festival stage under twilight skies with violet laser beams, neon purple stage lights, massive crowds with hands raised, and glowing holographic digital visuals in a majestic park setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhT-gLScuBqf56cum7mjV-9Nl-52GpouIiOblrBlJU8FurcMdtJoKa2F6i76x-A72vgWFwMrqBMc2sb-3IKCsR_ah6JwRNBZeesrbSn3phpnCLNwSb-0MM_f_UyArEn0LFXWg6qHSmf6ODP866swlI21VdY6PEFX1LJpY45ydLBQl27kCljK9CdoMo6hRA5Q30_MioepeJ4zpfB2MuOQsB-iKlQEJ4FI6jOT5EHlcUldfrVaRFtQw99g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<span class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm">
+                      Festival Pass
+                    </span>
+</div>
+<div class="md:col-span-8">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Live Experience</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight mt-0.5 leading-snug">
+                      Neon Horizon Electronic Music Festival 2025
+                    </h2>
+<div class="inline-block mt-space-xs px-space-sm py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">
+                      VIP Express Pass — Tier 1
+                    </div>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm py-space-md bg-surface-container-low rounded-xl px-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Date</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block mt-0.5">Fri, Jul 18</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2025</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Time</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block mt-0.5">3:30 PM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gates Open</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Access Point</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold block mt-0.5">Gate B</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">VIP Fast-lane</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Attendee</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold block mt-0.5 truncate">Sarah Lin</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Government ID req.</span>
+</div>
+</div>
+<!-- Venue Info Strip -->
+<div class="flex items-center gap-space-xs mt-space-md text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+<span class="font-medium text-on-surface">Golden Gate Park, San Francisco, CA</span>
+<span class="text-outline-variant">•</span>
+<span>Polo Field Pavilion Entry</span>
+<a class="text-primary font-label-sm text-label-sm underline ml-space-xs" href="#map-section">Map &amp; Transit</a>
+</div>
+</div>
+<!-- Quick Action Button Row -->
+<div class="pt-space-lg mt-space-md flex flex-wrap items-center gap-space-xs">
+<!-- Apple / Google Wallet Button -->
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">wallet</span>
+<span>Add to Apple / Google Wallet</span>
+</button>
+<!-- PDF Pass -->
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Print PDF Pass</span>
+</button>
+<!-- Transfer Ticket -->
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" onclick="openTransferModal('Neon Horizon 2025')" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Transfer Ticket</span>
+</button>
+<!-- Calendar -->
+<button class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" title="Add to Calendar" type="button">
+<span class="material-symbols-outlined text-[18px]">event</span>
+<span>Sync Calendar</span>
+</button>
+</div>
+</div>
+<!-- Perforated Notch Divider & Scannable QR Pass Section (4 Cols) -->
+<div class="relative lg:col-span-4 bg-surface-container-low p-space-lg md:p-space-xl flex flex-col items-center justify-between text-center overflow-hidden">
+<!-- Left Notch cutouts (Visible on desktop) -->
+<div class="hidden lg:block absolute -left-3 top-12 w-6 h-6 rounded-full bg-surface"></div>
+<div class="hidden lg:block absolute -left-3 bottom-12 w-6 h-6 rounded-full bg-surface"></div>
+<!-- Vertical perforation dashed line indicator -->
+<div class="hidden lg:block absolute left-0 top-16 bottom-16 w-0 border-l-2 border-dashed border-secondary-container"></div>
+<!-- Mobile horizontal cutout -->
+<div class="lg:hidden absolute -top-3 left-12 w-6 h-6 rounded-full bg-surface"></div>
+<div class="lg:hidden absolute -top-3 right-12 w-6 h-6 rounded-full bg-surface"></div>
+<div class="lg:hidden absolute top-0 left-16 right-16 h-0 border-t-2 border-dashed border-secondary-container"></div>
+<!-- Top Security Badge -->
+<div class="w-full flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+                  Dynamic QR Auth
+                </span>
+<span class="font-mono text-label-sm font-semibold text-primary" id="qr-refresh-timer">Refreshes in 42s</span>
+</div>
+<!-- Interactive Live QR Code Presentation -->
+<div class="relative p-space-md bg-surface-container-lowest rounded-2xl shadow-md my-auto group">
+<!-- Glowing Aura -->
+<div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary-container via-secondary-container to-primary-container opacity-20 blur group-hover:opacity-40 transition-opacity"></div>
+<div class="relative bg-surface-container-lowest p-2 rounded-xl flex flex-col items-center">
+<!-- Custom Detailed Scalable QR SVG -->
+<svg class="w-48 h-48 text-primary" fill="currentColor" viewbox="0 0 200 200">
+<!-- Position Detection Patterns Top Left -->
+<rect fill="currentColor" height="60" rx="8" width="60" x="10" y="10"></rect>
+<rect fill="white" height="40" rx="4" width="40" x="20" y="20"></rect>
+<rect fill="currentColor" height="24" rx="2" width="24" x="28" y="28"></rect>
+<!-- Position Detection Patterns Top Right -->
+<rect fill="currentColor" height="60" rx="8" width="60" x="130" y="10"></rect>
+<rect fill="white" height="40" rx="4" width="40" x="140" y="20"></rect>
+<rect fill="currentColor" height="24" rx="2" width="24" x="148" y="28"></rect>
+<!-- Position Detection Patterns Bottom Left -->
+<rect fill="currentColor" height="60" rx="8" width="60" x="10" y="130"></rect>
+<rect fill="white" height="40" rx="4" width="40" x="20" y="140"></rect>
+<rect fill="currentColor" height="24" rx="2" width="24" x="28" y="148"></rect>
+<!-- Data Blocks Mosaic Simulation -->
+<rect height="10" rx="2" width="10" x="80" y="15"></rect>
+<rect height="10" rx="2" width="15" x="100" y="15"></rect>
+<rect height="12" rx="2" width="25" x="85" y="35"></rect>
+<rect height="20" rx="2" width="12" x="15" y="80"></rect>
+<rect height="10" rx="2" width="18" x="35" y="90"></rect>
+<rect height="30" rx="2" width="10" x="60" y="80"></rect>
+<!-- Core center matrix -->
+<rect height="14" rx="3" width="14" x="80" y="65"></rect>
+<rect height="14" rx="3" width="14" x="105" y="65"></rect>
+<rect fill="#30217d" height="20" rx="3" width="20" x="90" y="90"></rect>
+<rect height="15" rx="2" width="15" x="120" y="85"></rect>
+<rect height="10" rx="2" width="25" x="145" y="85"></rect>
+<rect height="15" rx="2" width="15" x="175" y="105"></rect>
+<rect height="12" rx="2" width="20" x="80" y="125"></rect>
+<rect height="25" rx="2" width="15" x="110" y="120"></rect>
+<rect height="15" rx="2" width="30" x="80" y="150"></rect>
+<rect height="25" rx="2" width="20" x="120" y="155"></rect>
+<rect height="20" rx="2" width="15" x="150" y="135"></rect>
+<rect height="20" rx="2" width="20" x="170" y="145"></rect>
+<rect height="15" rx="2" width="35" x="145" y="170"></rect>
+<!-- Security Watermark Center Badge -->
+<circle cx="100" cy="100" fill="white" r="16"></circle>
+<circle cx="100" cy="100" fill="#30217d" r="12"></circle>
+<path d="M96 100 L99 103 L105 97" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<!-- Pulsing Scanner line -->
+<div class="w-full h-0.5 bg-gradient-to-r from-transparent via-primary-container to-transparent mt-1 animate-pulse"></div>
+</div>
+</div>
+<!-- Ticket Code & Turnstile Hint -->
+<div class="mt-space-sm">
+<span class="font-label-md text-label-md font-bold text-on-surface block tracking-wide">Scan at entrance turnstile</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">Hold phone with screen at maximum brightness</span>
+<div class="mt-space-sm inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container font-mono text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  NFC Tap Enabled
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pass 2: Secondary Upcoming Ticket (Global AI Summit) -->
+<div class="relative bg-surface-container-lowest rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[280px]">
+<!-- Main Content Left (8 Cols) -->
+<div class="lg:col-span-8 p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm font-semibold uppercase">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                      Valid
+                    </span>
+<span class="inline-flex items-center px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+                      Delegate Badge
+                    </span>
+</div>
+<span class="font-mono font-label-sm text-label-sm text-on-surface-variant">#SUMMIT-2025-4190</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start">
+<div class="w-full sm:w-36 h-28 rounded-xl overflow-hidden shadow-sm shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Futuristic technology conference auditorium with deep purple ambient lighting, modern architectural curves, keynote presenter on an elevated stage with high-definition digital backdrop screen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIrnbDEY-UugqzFE4K8ObwBsh3QKgcdoL3EZ8pTeB0JPVhR7JxctIr83AdupFvL_ewhNsqTWSsCDgCnbUU9zyUpvP5czbPCaV7zEdWrAnbZVhDNMyRNgour1lMEdeNdIvooOUDxIK0EoYLsMVLNjTW75CuMtRrD22qMIBOay_Oy_13jjvvDdB4K2tqoaH3ToXrZW0MEXuO-8DO40zTFYN2HWJu1uqn_mMGn_dpKimLy2VHn5_Ua911lw"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Tech &amp; Innovation</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight mt-0.5">
+                      Global AI &amp; Web Innovations Summit 2025
+                    </h3>
+<div class="inline-block mt-1 px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+                      All-Access Delegate
+                    </div>
+<div class="flex flex-wrap items-center gap-space-md mt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>August 12, 2025 • 9:00 AM PDT</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">location_city</span>
+<span>Moscone Center West, San Francisco</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Action Buttons -->
+<div class="pt-space-md mt-space-md flex flex-wrap items-center justify-between gap-space-sm border-t-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Badge Name:</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sarah Lin • Senior Product Architect</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>View Details</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code</span>
+<span>Expand Pass</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mini QR Preview Stub Right (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-md flex flex-col items-center justify-center text-center relative">
+<div class="hidden lg:block absolute left-0 top-6 bottom-6 w-0 border-l border-dashed border-secondary-container"></div>
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm mb-space-xs">
+<!-- Mini QR Representation -->
+<svg class="w-28 h-28 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect height="30" rx="3" width="30" x="5" y="5"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="10" y="10"></rect>
+<rect height="12" rx="1" width="12" x="14" y="14"></rect>
+<rect height="30" rx="3" width="30" x="65" y="5"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="70" y="10"></rect>
+<rect height="12" rx="1" width="12" x="74" y="14"></rect>
+<rect height="30" rx="3" width="30" x="5" y="65"></rect>
+<rect fill="white" height="20" rx="2" width="20" x="10" y="70"></rect>
+<rect height="12" rx="1" width="12" x="14" y="74"></rect>
+<rect height="8" rx="1" width="8" x="45" y="15"></rect>
+<rect fill="#30217d" height="16" rx="2" width="16" x="42" y="42"></rect>
+<rect height="8" rx="1" width="12" x="65" y="45"></rect>
+<rect height="12" rx="1" width="12" x="45" y="70"></rect>
+<rect height="10" rx="1" width="25" x="65" y="70"></rect>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Badge Scannable</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Turnstile West Pavilion</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Past Events Panel (Hidden by default) -->
+<div class="hidden space-y-space-md" id="panel-past">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Past Completed Experiences</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Archived digital credentials &amp; memories.</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">6 Attended Events</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Past Card 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">April 14, 2025</span>
+<h4 class="font-headline-sm text-[1.1rem] font-bold text-on-surface mt-1 leading-snug">Metropolitan Symphony Gala: Vivaldi Reimagined</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Davies Symphony Hall • Tier 1 Orchestra</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span> Attended
+                </span>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:bg-surface-container-high transition-colors">
+                  View Proof of Attendance
+                </button>
+</div>
+</div>
+<!-- Past Card 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">February 22, 2025</span>
+<h4 class="font-headline-sm text-[1.1rem] font-bold text-on-surface mt-1 leading-snug">Nordic Gastronomy &amp; Wine Salon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">The Atrium Pier 27 • Chef Table Pass</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span> Attended
+                </span>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:bg-surface-container-high transition-colors">
+                  Receipt &amp; Tax Invoice
+                </button>
+</div>
+</div>
+<!-- Past Card 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">November 10, 2024</span>
+<h4 class="font-headline-sm text-[1.1rem] font-bold text-on-surface mt-1 leading-snug">Art Basel Contemporary Horizon Preview</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Palace of Fine Arts • Collector Pass</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">check_circle</span> Attended
+                </span>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:bg-surface-container-high transition-colors">
+                  Catalog Archive
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cancelled & Refunded Panel (Hidden by default) -->
+<div class="hidden space-y-space-md" id="panel-cancelled">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Cancelled &amp; Refunded Passes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Records of refunded tickets and cancelled reservations.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                  Refunded ($145.00)
+                </span>
+<span class="font-mono text-label-sm text-on-surface-variant">Ref: #EVT-2024-1029</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Kinetic Light Sculptures Exhibition</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Original Date: March 29, 2025 • Pier 48 SF • Refund completed to Visa ending in 8802</p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+                View Refund Receipt
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Attendee Information & Venue Transit Guide (Bento Bottom Strip) -->
+<section class="mt-space-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-lg" id="map-section">
+<!-- Interactive Venue Map Card (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Venue Location &amp; Turnstile Entry</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Golden Gate Park • Polo Field Gate B</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Gate B Fast-Track</span>
+</div>
+<!-- Map Component -->
+<div class="w-full h-64 bg-cover bg-center rounded-xl shadow-inner mt-space-sm relative overflow-hidden" data-location="Golden Gate Park Polo Field, San Francisco, CA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1f1iSvM-H8MX_nFVb4LyNnJtCAFR6ANCY8MsIspRO8AEe0ryTZdWbxZ-Ec-8QPA1Y1I9rtLx0_LmpYIa7Z3AgX7564UTcRa7hbsR5IcEI_gcCUysjDKDCdOd1v0kLXPLaVN1jGi11VPMfdD2u0j-PoELDzvOA0FlAkt6derO3fZniKBVsnlQdSflpvehd7jy60xS7KC1u3Jq-YI-oPnH_HIaxt-YhdrNXrnX_w_FSzyavPiVlZZ44AA')">
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-full text-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+<span>Rideshare Drop-off: Sunset Blvd &amp; JFK Drive</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-md mt-space-md bg-surface-container-low rounded-xl p-space-sm text-center">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Muni Metro</span>
+<span class="font-label-md text-label-md text-on-surface block font-semibold mt-0.5">N-Judah Line</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Shuttle Express</span>
+<span class="font-label-md text-label-md text-on-surface block font-semibold mt-0.5">Civic Center Dir.</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Bicycle Valet</span>
+<span class="font-label-md text-label-md text-emerald-700 block font-semibold mt-0.5">Free &amp; Monitored</span>
+</div>
+</div>
+</div>
+<!-- Quick Help, Security & ID Policy Bento (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Policy Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex-1">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="p-2 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Entry Requirements</h3>
+</div>
+<ul class="space-y-space-sm mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">badge</span>
+<span><strong>Government Photo ID:</strong> Must match the attendee name registered on the pass (<strong class="text-on-surface">Sarah Lin</strong>).</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">screen_lock_portrait</span>
+<span><strong>No Screenshots:</strong> Dynamic QR codes rotate cryptographic salts periodically to prevent ticket counterfeiting.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5 shrink-0">shopping_bag</span>
+<span><strong>Clear Bag Policy:</strong> Max dimensions 12" x 6" x 12" permitted through VIP Fast Track.</span>
+</li>
+</ul>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Need to re-assign name?</span>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline" onclick="openTransferModal('Neon Horizon 2025')">
+                Transfer Ticket →
+              </button>
+</div>
+</div>
+<!-- Direct Organizer Support -->
+<div class="bg-primary-container text-on-primary rounded-2xl p-space-lg shadow-md flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-semibold">24/7 Attendee Concierge</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-primary mt-0.5">Having trouble at the gate?</h4>
+<p class="font-body-sm text-body-sm text-on-primary/80 mt-0.5">Locate the Eventora Resolution Kiosk at Gate B.</p>
+</div>
+<button class="p-space-sm rounded-full bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-colors shrink-0 shadow-sm" onclick="toggleHelpDrawer(true)">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- SLIDE-OVER HELP & EVENT POLICIES DRAWER -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-all duration-300 opacity-0 invisible" id="help-drawer">
+<!-- Backdrop Scrim -->
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-sm pointer-events-auto transition-opacity" onclick="toggleHelpDrawer(false)"></div>
+<!-- Drawer Panel Content -->
+<div class="absolute top-0 right-0 h-full w-full max-w-md bg-surface-container-lowest shadow-2xl pointer-events-auto transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between" id="help-drawer-body">
+<!-- Drawer Header -->
+<div class="p-space-lg flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">live_help</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Eventora Pass Assist</h3>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="toggleHelpDrawer(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Content -->
+<div class="p-space-lg overflow-y-auto space-y-space-lg flex-1">
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-xs">Screen &amp; Brightness Tips</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Ensure your screen brightness is set to 100% when stepping up to laser turnstiles. Screen privacy protectors or polarized sunglasses may hinder scanners.
+          </p>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-xs">Offline Pass Guarantee</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your QR code and cryptographic keys are safely cached locally in your Eventora Web App. You do NOT need cellular or Wi-Fi data to scan in at the venue gates.
+          </p>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-xs">Ticket Transfers &amp; Resale</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Transfers close 4 hours prior to gate opening. Once accepted by the new recipient, your QR code will instantly deactivate and be re-minted with their details.
+          </p>
+</div>
+<!-- Refund Status Tracker -->
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-primary">Refund Tracker</span>
+<h5 class="font-label-md text-label-md font-bold text-on-surface mt-1">Order #EVT-2024-1029</h5>
+<div class="flex items-center gap-2 mt-2">
+<span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Refund Settled ($145.00)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Processed to Visa Card ****8802 on April 2, 2025.</span>
+</div>
+<!-- Direct Contact -->
+<div class="space-y-space-xs">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Urgent Support</h4>
+<div class="flex flex-col gap-2">
+<a class="p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between" href="tel:+18005550199">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span class="font-label-md text-label-md text-on-surface">Gate Dispatch Hot-line</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Call Now</span>
+</a>
+<button class="p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between text-left" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">chat</span>
+<span class="font-label-md text-label-md text-on-surface">Live Ticket Agent Chat</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Online</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-md bg-surface-container-low text-center">
+<button class="w-full py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" onclick="toggleHelpDrawer(false)">
+          Dismiss
+        </button>
+</div>
+</div>
+</div>
+<!-- TICKET TRANSFER MODAL -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-all duration-200 opacity-0 invisible flex items-center justify-center p-space-md" id="transfer-modal">
+<div class="absolute inset-0 bg-on-background/40 backdrop-blur-sm pointer-events-auto" onclick="closeTransferModal()"></div>
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl p-space-xl pointer-events-auto transform scale-95 transition-all duration-200" id="transfer-modal-body">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-full bg-secondary-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">forward_to_inbox</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Transfer Admission Pass</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center" onclick="closeTransferModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Transferring <strong class="text-on-surface" id="transfer-event-title">Neon Horizon Festival 2025</strong>. The recipient will receive a secure claiming link to finalize the transfer.
+      </p>
+<form class="space-y-space-md" onsubmit="handleTransferSubmit(event)">
+<div>
+<label class="block font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant mb-1">Recipient Legal Full Name</label>
+<input class="w-full px-space-md py-space-xs rounded-full bg-surface-container-low text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container placeholder:text-outline-variant" placeholder="e.g. Alex Morgan" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant mb-1">Recipient Email Address</label>
+<input class="w-full px-space-md py-space-xs rounded-full bg-surface-container-low text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container placeholder:text-outline-variant" placeholder="alex.morgan@domain.com" required="" type="email"/>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl text-on-surface-variant font-body-sm text-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">info</span>
+<span>Transfers are final once accepted. Your digital QR code and Apple/Google Wallet cards will become void immediately.</span>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-space-xs">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeTransferModal()" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" type="submit">
+            Send Digital Pass
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- INLINE CLIENT CONTROLLER -->
+<script>
+    // Tab Switching logic
+    function switchTab(tabId) {
+      const tabs = ['upcoming', 'past', 'cancelled'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        const panel = document.getElementById(`panel-${t}`);
+        if (t === tabId) {
+          btn.className = "px-space-lg py-space-xs rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-space-xs";
+          panel.classList.remove('hidden');
+        } else {
+          btn.className = "px-space-lg py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs";
+          panel.classList.add('hidden');
+        }
+      });
+    }
+
+    // Help Drawer Control
+    function toggleHelpDrawer(isOpen) {
+      const drawer = document.getElementById('help-drawer');
+      const body = document.getElementById('help-drawer-body');
+      if (isOpen) {
+        drawer.classList.remove('invisible', 'opacity-0');
+        drawer.classList.add('opacity-100');
+        body.classList.remove('translate-x-full');
+      } else {
+        drawer.classList.add('opacity-0');
+        body.classList.add('translate-x-full');
+        setTimeout(() => drawer.classList.add('invisible'), 300);
+      }
+    }
+
+    // Ticket Transfer Modal
+    function openTransferModal(eventName) {
+      document.getElementById('transfer-event-title').textContent = eventName;
+      const modal = document.getElementById('transfer-modal');
+      const body = document.getElementById('transfer-modal-body');
+      modal.classList.remove('invisible', 'opacity-0');
+      modal.classList.add('opacity-100');
+      body.classList.remove('scale-95');
+      body.classList.add('scale-100');
+    }
+
+    function closeTransferModal() {
+      const modal = document.getElementById('transfer-modal');
+      const body = document.getElementById('transfer-modal-body');
+      modal.classList.add('opacity-0');
+      body.classList.remove('scale-100');
+      body.classList.add('scale-95');
+      setTimeout(() => modal.classList.add('invisible'), 200);
+    }
+
+    function handleTransferSubmit(e) {
+      e.preventDefault();
+      alert('Transfer invitation dispatched! The recipient will receive instructions to claim their secure pass.');
+      closeTransferModal();
+    }
+
+    // Dynamic QR Counter Simulator
+    let timeLeft = 45;
+    setInterval(() => {
+      timeLeft--;
+      if (timeLeft <= 0) timeLeft = 60;
+      const timerEl = document.getElementById('qr-refresh-timer');
+      if (timerEl) {
+        timerEl.textContent = `Refreshes in ${timeLeft}s`;
+      }
+    }, 1000);
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-3xl pb-space-2xl mt-space-3xl shadow-[0_-1px_12px_rgba(48,33,125,0.03)]"><div class="max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col pr-0 lg:pr-space-xl"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">Eventora</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-lg leading-relaxed">The premier boutique destination for curated arts, cultural galas, soundscapes, and elevated live events. Elevate your presence and immerse yourself in memorable gatherings.</p><div class="flex items-center gap-space-xs"><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">public</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">campaign</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">photo_camera</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">forum</span></span></div></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Discover</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Explore Events</li><li class="hover:text-primary transition-colors cursor-pointer">Curated Concerts</li><li class="hover:text-primary transition-colors cursor-pointer">Arts &amp; Theatre</li><li class="hover:text-primary transition-colors cursor-pointer">Culinary Experiences</li><li class="hover:text-primary transition-colors cursor-pointer">Festivals</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Organizers</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Create an Event</li><li class="hover:text-primary transition-colors cursor-pointer">Organizer Studio</li><li class="hover:text-primary transition-colors cursor-pointer">Ticketing Solutions</li><li class="hover:text-primary transition-colors cursor-pointer">Access Management</li><li class="hover:text-primary transition-colors cursor-pointer">Pricing &amp; Fees</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Stay Inspired</span><p class="font-body-sm text-body-sm mb-space-sm">Curated weekly digest of unmissable experiences.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center bg-surface-container-lowest rounded-full p-1.5 shadow-[0_2px_8px_rgba(48,33,125,0.04)]"><input class="w-full bg-transparent px-space-sm text-body-sm text-on-surface placeholder:text-outline outline-none" placeholder="Your email address" type="email"/><button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><span class="font-label-sm text-label-sm text-outline-variant px-space-xs">Zero spam. Unsubscribe at any time.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container rounded-2xl px-space-lg py-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Eventora Inc. All rights reserved. Crafted for extraordinary moments.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><span class="hover:text-primary transition-colors cursor-pointer">Privacy Policy</span><span class="hover:text-primary transition-colors cursor-pointer">Terms of Service</span><span class="hover:text-primary transition-colors cursor-pointer">Cookie Settings</span><span class="hover:text-primary transition-colors cursor-pointer">Support</span></div></div></div></footer></body></html>

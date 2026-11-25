@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#474551", "on-secondary-container": "#5d577c", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#c8bfff", "on-secondary": "#ffffff", "outline-variant": "#c9c4d3", "surface-tint": "#5d51ac", "on-background": "#1a1930", "primary-container": "#30217d", "secondary-fixed-dim": "#cac1ec", "tertiary": "#1d1b2d", "secondary": "#605a7f", "surface": "#fcf8ff", "outline": "#787583", "surface-container": "#efebff", "surface-dim": "#dad7f6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "tertiary-container": "#323043", "primary-fixed": "#e5deff", "tertiary-fixed": "#e4dff9", "tertiary-fixed-dim": "#c8c3dd", "inverse-on-surface": "#f2eeff", "on-error": "#ffffff", "inverse-primary": "#c8bfff", "on-primary-fixed-variant": "#453893", "surface-bright": "#fcf8ff", "inverse-surface": "#2f2e46", "on-tertiary-container": "#9b97af", "on-tertiary-fixed-variant": "#474459", "on-surface": "#1a1930", "on-tertiary-fixed": "#1b192c", "on-secondary-fixed-variant": "#484266", "background": "#fcf8ff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#e3dfff", "on-primary-fixed": "#180064", "on-primary": "#ffffff", "surface-container-low": "#f6f2ff", "primary": "#1a0069", "surface-container-high": "#e9e5ff", "secondary-container": "#d8cffb", "secondary-fixed": "#e6deff", "surface-variant": "#e3dfff", "on-secondary-fixed": "#1c1738", "on-primary-container": "#9a8eee" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter-lg": "2rem", "space-xs": "0.5rem", "gutter": "1.5rem", "margin-sm": "1rem", "space-2xl": "3rem", "space-3xl": "4.5rem", "margin-lg": "3rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-sm": "1rem", "space-sm": "0.75rem", "margin": "1.5rem", "space-2xs": "0.25rem" }, "fontFamily": { "label-md": ["Inter"], "display-hero": ["Manrope"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Manrope"], "display-hero-mobile": ["Manrope"], "headline-lg": ["Manrope"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Manrope"], "headline-md": ["Manrope"], "body-sm": ["Inter"] }, "fontSize": { "label-md": ["0.8125rem", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "1.1", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["1rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["0.9375rem", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,33,125,0.05)] transition-all"><div class="h-20 max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold leading-none">Eventora</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:block">Discover. Book. Experience.</span></div></div><nav class="hidden lg:flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-space-2xs rounded-full shadow-[0_1px_3px_rgba(48,33,125,0.03)]" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#">Home</a><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="explore-events" href="#">Explore Events</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="categories" href="#">Categories</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="my-tickets" href="#">My Tickets</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="organizer-studio" href="#">Organizer Studio</a></nav><div class="flex items-center gap-space-xs sm:gap-space-sm"><button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center leading-none">3</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><a class="hidden xl:inline-flex items-center justify-center px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-[0_4px_16px_rgba(48,33,125,0.15)]" data-path="create-event" href="#">Get Started</a><div class="flex items-center pl-space-2xs"><button class="flex items-center rounded-full p-0.5 hover:ring-2 hover:ring-secondary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbvONSaQOhFyJr6QKjPcsM705KAKvkam3OeWOHKOgGyd9TgB7FV9M6ML1s1X69ZwRKukhTm9aTdmLbkxNVFo_CXuSFbN08l9aZk8neRGVSlME6kvHXUZ4WaH-JyytDUmDJw6Dyyr1_MC9P9DXXeNxLceOfiAwVgZyyacZHoIgQtBJbYTAdiUsRK5CYbiT6ivqNQFunS3WwECt6aeA8Wd0f_5G2wuGm68Y7US37c3jQHeqg4I_4Y-X2Pw"/></button></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow backdrops -->
+<div class="relative w-full max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg pt-space-lg pb-space-3xl">
+<!-- Top Row: Breadcrumbs & Fast Share Utilities -->
+<nav aria-label="Breadcrumb" class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<ol class="flex items-center flex-wrap gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<a class="hover:text-primary transition-colors" href="#">Explore Events</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<a class="hover:text-primary transition-colors" href="#">Music &amp; Concerts</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+</li>
+<li aria-current="page" class="text-primary font-bold truncate max-w-[240px] sm:max-w-none">
+          Neon Horizon Electronic Music Festival
+        </li>
+</ol>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container rounded-full text-on-surface-variant hover:text-on-surface transition-all text-label-md font-label-md shadow-sm" id="btn-share" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="hidden sm:inline">Share</span>
+</button>
+<button class="inline-flex items-center gap-space-2xs px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container rounded-full text-on-surface-variant hover:text-primary transition-all text-label-md font-label-md shadow-sm group" id="btn-favorite" type="button">
+<span class="material-symbols-outlined text-[18px] group-hover:text-error transition-colors" id="fav-icon">favorite</span>
+<span class="hidden sm:inline" id="fav-text">Save</span>
+</button>
+</div>
+</nav>
+<!-- Hero Showcase Section -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-xl mb-space-2xl">
+<!-- Media Aspect Holder -->
+<div class="relative w-full h-[340px] sm:h-[460px] lg:h-[520px] overflow-hidden">
+<img alt="Neon Horizon Electronic Music Festival stage visuals" class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-700 ease-out" data-alt="Futuristic neon synthwave electronic music festival at twilight in a grand park meadow. Hyper-luminous purple, cyan, and deep magenta lasers sweeping over a cheering vibrant crowd. Giant sculptural prism stage with geometric holographic LED pillars under a lavender twilight sky, ultra high-resolution cinematic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8jMO1gZH2IHqi9yQa_l8UAqALGR2ov1TxWITXcd2HGXLe7MIzODytclVk_KbzBt1u2UyVAhuHClmeE8OTiGV6OBNHaoqhiT747iZwx4g-nwhfwh00akeh8PQRA7KSZCPHjOi13jBMa22muugV_HzqM1joQ7sGQgoKzBC9SxRNAVw41m0aE1lOu4v3EddJMdnGzANzO2xMoUXhNzqbhHUg3BDck0p9T7cU1oa__WHZrwWKyTJ4nZSUmg"/>
+<!-- Subtle cinematic layered scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent opacity-85"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/60 via-transparent to-transparent"></div>
+<!-- Floating Badge Strip Overlays -->
+<div class="absolute top-space-md left-space-md sm:top-space-lg sm:left-space-lg flex items-center gap-space-xs z-10">
+<div class="flex items-center gap-space-2xs bg-surface-container-lowest/95 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-md text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span>Featured Event</span>
+</div>
+<div class="bg-primary-container/85 backdrop-blur-md px-space-md py-space-xs rounded-full text-on-primary font-label-md text-label-md shadow-md">
+            18+ Only
+          </div>
+</div>
+<!-- Hero Content Bottom Overlay -->
+<div class="absolute bottom-0 left-0 right-0 p-space-md sm:p-space-xl lg:p-space-2xl flex flex-col justify-end text-on-primary z-10">
+<!-- Category & Status Tag -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+<span class="px-space-sm py-1 bg-secondary-container/90 text-on-secondary-fixed rounded-full font-label-sm text-label-sm uppercase tracking-wider font-bold">
+              EDM &amp; Electronic Arts
+            </span>
+<span class="px-space-sm py-1 bg-surface-container-lowest/20 backdrop-blur-sm text-on-primary rounded-full font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Tier 1 Tickets Available
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg sm:text-[3rem] lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.1] text-white max-w-4xl drop-shadow-md">
+            Neon Horizon Electronic Music Festival 2025
+          </h1>
+</div>
+</div>
+<!-- Quick Metadata Strip directly beneath the image -->
+<div class="w-full bg-surface-container-lowest px-space-md sm:px-space-xl py-space-md sm:py-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Organizer pill & follow -->
+<div class="flex items-center justify-between sm:justify-start gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-primary-container font-headline-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div>
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SoundWave Productions</span>
+<span class="material-symbols-outlined text-[16px] text-surface-tint" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="inline-flex items-center text-amber-600 font-semibold gap-0.5">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.9
+                </span>
+<span>•</span>
+<span>Verified Organizer</span>
+</div>
+</div>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high hover:bg-secondary-container text-on-surface-variant hover:text-primary transition-all font-label-md text-label-md" id="btn-follow" type="button">
+            + Follow
+          </button>
+</div>
+<!-- Quick Facts Matrix -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm sm:gap-space-md">
+<div class="flex items-center gap-space-xs p-space-xs rounded-full bg-surface-container-low px-space-md">
+<span class="material-symbols-outlined text-primary-container text-[20px]">calendar_month</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Date &amp; Time</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Fri, Jul 18 • 4:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded-full bg-surface-container-low px-space-md">
+<span class="material-symbols-outlined text-primary-container text-[20px]">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Location</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Golden Gate Meadow, SF</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded-full bg-surface-container-low px-space-md sm:col-span-2 md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-[20px]">shield_person</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Access Policy</span>
+<span class="font-label-md text-label-md text-on-surface">Age 18+ Valid ID Req.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Two-Column Architectural Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT COLUMN: Narrative, Lineup, Highlights, Venue & FAQs (7 cols) -->
+<main class="lg:col-span-7 flex flex-col gap-space-2xl">
+<!-- About This Event -->
+<section class="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+              About This Experience
+            </h2>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+              8th Annual Edition
+            </span>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant leading-relaxed space-y-space-md">
+<p>
+              Prepare for the Northern California's most spellbinding twilight gathering. <strong class="text-on-surface font-semibold">Neon Horizon 2025</strong> returns to the iconic Golden Gate Park Meadow, transmuting historic natural grounds into a luminous multi-dimensional playground of sound, light, and shared euphoria.
+            </p>
+<p>
+              Featuring an unparalleled audio-visual installation programmed across three handcrafted stages, the festival unites international electronic pioneers, underground synthwave virtuosos, and boundary-pushing visual artists for an 8-hour unbroken journey.
+            </p>
+</div>
+<!-- Artist Lineup Teaser / Stage Grid -->
+<div class="mt-space-lg pt-space-lg bg-surface-container-low rounded-2xl p-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">album</span>
+                Stage Lineups &amp; Curated Acts
+              </span>
+<span class="font-label-sm text-label-sm text-surface-tint">3 Stages • 18 Artists</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-surface-tint font-bold uppercase tracking-wider block mb-1">Prism Stage</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Kavinsky Live</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nero (DJ Set) • Tycho</p>
+<span class="mt-2 inline-block font-label-sm text-[11px] text-outline">Synthwave &amp; Melodic</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider block mb-1">Solaris Dome</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Amelie Lens</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">I Hate Models • Indira Paganotto</p>
+<span class="mt-2 inline-block font-label-sm text-[11px] text-outline">Industrial Techno</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider block mb-1">Aurora Grove</span>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Lane 8</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Yotto • Sultan + Shepard</p>
+<span class="mt-2 inline-block font-label-sm text-[11px] text-outline">Deep House &amp; Ambient</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Event Highlights Card Grid -->
+<section class="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-lg">
+            Event Highlights
+          </h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[24px]">stadium</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">3 Immersive Stages</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Bespoke architectural stages designed with kinetic LED monoliths and 360-degree spatial choreography.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[24px]">surround_sound</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">World-Class Sound</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Custom L-Acoustics K1 array delivering crystal-clear bass frequencies tuned specifically for open-air acoustic clarity.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[24px]">ramen_dining</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">Artisan Food Market</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Over 24 Bay Area culinary trucks, vegan specialties, craft cocktail pop-ups, and complimentary hydration stations.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-md p-space-md rounded-2xl bg-surface-container-low transition-all hover:bg-surface-container">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[24px]">flare</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface mb-1">Laser &amp; Pyrotechnics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  State-of-the-art 40-watt high power RGB laser mapping synced live to the headline sonic climaxes.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Interactive Venue Card -->
+<section class="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+                Location &amp; Venue
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Golden Gate Park Meadow • San Francisco, CA</p>
+</div>
+<a class="inline-flex items-center gap-space-2xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-all self-start sm:self-auto" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Directions</span>
+</a>
+</div>
+<!-- Map Component via Data Pipeline -->
+<div class="relative w-full h-72 sm:h-80 rounded-2xl overflow-hidden shadow-inner mb-space-md group">
+<div class="w-full h-full bg-cover bg-center" data-location="Golden Gate Park Meadow, San Francisco, CA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsl1c6uMoPZflQD0G-8Oq0f2I36cLOCqjpO_erJazWkb0IM5SUbHtyn49HXSVX6sas1fUj3TFh3d76FW1xyPs2-iTZXC6bzAJnHv7xnc-0ly0xyjPmbP2e_rhS_4khwUrk5_mjsCCtbUCk06zmRidvmtA8z6ookrWgOM74WVqwZYNTHwH5m5inyz9oVDO2ywvhlkzdR05svlltqjpQ-VQUseebEQZVy_auuc6W-Mlp9cenWDMMF4PesQ')"></div>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<!-- Map Overlay Chip -->
+<div class="absolute bottom-space-md left-space-md right-space-md sm:right-auto bg-surface-container-lowest/95 backdrop-blur-md p-space-md rounded-2xl shadow-lg flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">pin_drop</span>
+</div>
+<div class="text-left">
+<p class="font-label-md text-label-md text-on-surface font-bold">Main Festival Entrance (North Gate)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">JFK Drive &amp; Conservatory Dr W</p>
+</div>
+</div>
+</div>
+<!-- Transit / Parking Advice Tabs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-2xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-primary font-bold flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[18px]">directions_bus</span>
+                Muni &amp; Public Transit
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Take the N-Judah light rail or 5-Fulton express bus straight to 8th Ave entrance. Continuous shuttle loops run from Civic Center Station every 10 mins.
+              </p>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low">
+<span class="font-label-md text-label-md text-primary font-bold flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-[18px]">local_parking</span>
+                Parking &amp; Rideshare
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Designated Uber/Lyft pickup hub situated at Fulton &amp; 10th Ave. Pre-paid parking permits are strictly required for the Music Concourse garage.
+              </p>
+</div>
+</div>
+</section>
+<!-- Organizer Bio Card -->
+<section class="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<img alt="SoundWave Productions organizer avatar" class="w-16 h-16 rounded-full object-cover shadow-md" data-alt="SoundWave Productions artistic founder avatar portrait in an aesthetic recording studio surrounded by vintage purple synthesizers and audio monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJWY0MK2k_nyH2PXx4OcjMCTR24CfofmY9Vi4DA59GM1M99PHW7IoQgXEETJ9gQVCtRroNQJGTQXRj2RIhQCSX0srpkpzSGGoVIX1i3Z6nuu5ehe8BSzS2D0sY08wnViP27QWa7L5j-atgpWtd2arKQCCIObElkX1bZtA8Nk5AI4gm5AIeV4gAnUAuDtOiDOyXjeaZsf5ldlpnVX2Fd3GytDTvpbRQwRijnqQzKHpk765wxfbfm5u2Zw"/>
+<div>
+<div class="flex items-center gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">SoundWave Productions</h3>
+<span class="material-symbols-outlined text-[18px] text-surface-tint" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">San Francisco, CA • Member since 2018</p>
+</div>
+</div>
+<button class="px-space-lg py-space-xs rounded-full bg-surface-container-high hover:bg-secondary-container text-on-surface transition-colors font-label-md text-label-md shadow-sm" type="button">
+              Contact Organizer
+            </button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            SoundWave Productions specializes in curated, large-scale experiential electronic music festivals, architectural lighting, and high-fidelity sound architecture. They have produced over 45 sold-out live events across the West Coast, hosting over 250,000 attendees.
+          </p>
+<div class="flex flex-wrap items-center gap-space-lg pt-space-sm font-label-md text-label-md text-on-surface">
+<div>
+<span class="font-bold text-primary block">48</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Past Events</span>
+</div>
+<div>
+<span class="font-bold text-primary block">94.2k</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Followers</span>
+</div>
+<div>
+<span class="font-bold text-primary block">4.9 / 5.0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Average Rating</span>
+</div>
+</div>
+</section>
+<!-- Frequently Asked Questions (FAQ) Accordion -->
+<section class="bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-xl shadow-sm mb-space-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight mb-space-md">
+            Frequently Asked Questions
+          </h2>
+<div class="flex flex-col gap-space-sm" id="faq-container">
+<!-- Accordion Item 1 -->
+<div class="faq-item rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md flex items-center justify-between text-left font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none" type="button">
+<span>What is the ticket refund &amp; exchange policy?</span>
+<span class="material-symbols-outlined text-surface-tint transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md font-body-sm text-body-sm text-on-surface-variant">
+                Full refunds are guaranteed automatically up to 7 calendar days before the event gate opens (until Friday, July 11, 2025 at 11:59 PM PDT). Tickets can also be securely transferred or resold via the official Eventora Fan-to-Fan exchange at zero markup fees.
+              </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="faq-item rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md flex items-center justify-between text-left font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none" type="button">
+<span>What are the entry and age identification requirements?</span>
+<span class="material-symbols-outlined text-surface-tint transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md font-body-sm text-body-sm text-on-surface-variant">
+                This event is strictly 18 and over. You must present a valid government-issued photo ID (driver’s license, passport, or state ID card). Temporary paper documents and school IDs will not be accepted at entry scanners.
+              </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="faq-item rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md flex items-center justify-between text-left font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none" type="button">
+<span>What items are prohibited inside the meadow grounds?</span>
+<span class="material-symbols-outlined text-surface-tint transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md font-body-sm text-body-sm text-on-surface-variant">
+                Prohibited items include outside beverages (except empty reusable hydration packs/flasks up to 32oz), weapons or sharp objects, professional DSLR cameras with detachable lenses, drone cameras, and illegal substances. Empty reusable bottles are welcome.
+              </div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="faq-item rounded-2xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-toggle w-full px-space-lg py-space-md flex items-center justify-between text-left font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none" type="button">
+<span>What is the festival clear bag policy?</span>
+<span class="material-symbols-outlined text-surface-tint transform transition-transform duration-300">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-md font-body-sm text-body-sm text-on-surface-variant">
+                To guarantee swift and secure gate security, clear plastic, vinyl, or PVC bags smaller than 12" x 6" x 12" are approved. Small clutches or fanny packs no larger than 4.5" x 6.5" do not need to be clear.
+              </div>
+</div>
+</div>
+</section>
+</main>
+<!-- RIGHT COLUMN: Sticky Ticket Booking Architecture (5 cols) -->
+<aside class="lg:col-span-5 sticky top-24">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-lg shadow-xl relative overflow-hidden">
+<!-- Subtle corner flare graphic for luxury sheen -->
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-secondary-container/40 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Ticket Box Header & Countdown -->
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Select Tickets</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instant digital QR mobile passes</p>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 bg-secondary-container rounded-full text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary-container animate-spin" style="animation-duration: 4s;">schedule</span>
+<span>Early bird: 2d left</span>
+</div>
+</div>
+<!-- TICKET TIERS LIST -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<!-- TIER 1: General Admission -->
+<div class="ticket-card p-space-md rounded-2xl bg-surface-container-low transition-all">
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">General Admission</h3>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-[10px] font-bold">Available</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Entry to all 3 stages, food court access &amp; hydration bar.
+                  </p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">$89.00</span>
+<span class="block font-label-sm text-[10px] text-on-surface-variant">+ fees</span>
+</div>
+</div>
+<!-- Stepper Controller -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Select quantity:</span>
+<div class="inline-flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button aria-label="Decrease General Admission quantity" class="btn-qty w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30" data-action="minus" data-tier="ga" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface" id="qty-ga">0</span>
+<button aria-label="Increase General Admission quantity" class="btn-qty w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" data-action="plus" data-tier="ga" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TIER 2: VIP Express Pass (DEFAULT PRE-SELECTED 2) -->
+<div class="ticket-card p-space-md rounded-2xl bg-surface-container-high transition-all shadow-md relative">
+<div class="absolute -top-2.5 right-4 bg-primary text-on-primary px-space-sm py-0.5 rounded-full font-label-sm text-[10px] font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-amber-300" style="font-variation-settings: 'FILL' 1;">star</span>
+                Selling Fast
+              </div>
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface">VIP Express Pass</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Priority entry, dedicated VIP lounge, private bars, premium stage deck.
+                  </p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">$169.00</span>
+<span class="block font-label-sm text-[10px] text-on-surface-variant">+ fees</span>
+</div>
+</div>
+<!-- Stepper Controller -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Recommended choice</span>
+<div class="inline-flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button aria-label="Decrease VIP Express Pass quantity" class="btn-qty w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" data-action="minus" data-tier="vip" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-primary" id="qty-vip">2</span>
+<button aria-label="Increase VIP Express Pass quantity" class="btn-qty w-8 h-8 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" data-action="plus" data-tier="vip" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- TIER 3: Backstage All-Access (SOLD OUT) -->
+<div class="ticket-card p-space-md rounded-2xl bg-surface-container-low opacity-60 relative pointer-events-none">
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-label-lg text-label-lg font-bold text-on-surface line-through">Backstage All-Access</h3>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold">Sold Out</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                    Artist lounge access, exclusive merch pack, complimentary bar drinks.
+                  </p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-outline">$299.00</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Waitlist available online</span>
+<button class="px-space-md py-1 rounded-full bg-surface-container-high text-outline text-label-sm font-label-sm cursor-not-allowed" disabled="" type="button">
+                  Unavailable
+                </button>
+</div>
+</div>
+</div>
+<!-- Price Calculation Breakdown Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-low mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider block mb-space-xs">Order Summary</span>
+<div class="flex flex-col gap-space-2xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-on-surface" id="row-summary-vip">
+<span id="label-vip-subtotal">2× VIP Express Pass</span>
+<span class="font-semibold text-on-surface" id="val-vip-subtotal">$338.00</span>
+</div>
+<div class="hidden justify-between items-center text-on-surface" id="row-summary-ga">
+<span id="label-ga-subtotal">0× General Admission</span>
+<span class="font-semibold text-on-surface" id="val-ga-subtotal">$0.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="flex items-center gap-1">
+                  Service &amp; Processing Fee
+                  <span class="material-symbols-outlined text-[14px] text-outline cursor-help" title="Standard ticketing platform processing fee">info</span>
+</span>
+<span class="font-semibold text-on-surface" id="val-fees">$24.50</span>
+</div>
+<div class="pt-space-xs mt-space-xs flex justify-between items-baseline text-on-surface">
+<span class="font-label-lg text-label-lg font-bold">Total Price</span>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-extrabold text-primary" id="val-total">$362.50</span>
+<span class="block font-label-sm text-[11px] text-on-surface-variant">USD (incl. all taxes)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Checkout Action Trigger -->
+<button class="w-full py-3.5 px-space-lg rounded-full bg-primary-container text-on-primary hover:bg-primary transition-all duration-200 font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-lg hover:shadow-xl active:scale-[0.99]" id="btn-checkout" type="button">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<!-- Guarantee Seals & Trust Signals -->
+<div class="flex items-center justify-center gap-space-sm mt-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-emerald-600" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>256-Bit SSL Secured</span>
+</div>
+<span>•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">verified</span>
+<span>Official Ticket Partner</span>
+</div>
+</div>
+<!-- Cancellation policy footnote badge -->
+<div class="mt-space-sm p-space-xs rounded-xl bg-surface-container flex items-center justify-center gap-1.5 text-center font-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">published_with_changes</span>
+<span>Full refund up to 7 days before event.</span>
+</div>
+</div>
+<!-- Social Proof Widget -->
+<div class="mt-space-md bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex items-center gap-space-sm">
+<div class="flex -space-x-2">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-label-sm font-bold shadow-sm">JD</span>
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm font-bold shadow-sm">ML</span>
+<span class="w-8 h-8 rounded-full bg-surface-tint text-on-primary flex items-center justify-center font-label-sm font-bold shadow-sm">+9</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">1,248 people</strong> booked tickets in the last 24 hours.
+          </p>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<!-- Dynamic Ticket Selection & FAQ Interactions Script -->
+<script>
+  (function() {
+    // Ticket State
+    const prices = { ga: 89.0, vip: 169.0 };
+    const quantities = { ga: 0, vip: 2 };
+    const baseFeePerTicket = 12.25;
+
+    const qtyGaElem = document.getElementById('qty-ga');
+    const qtyVipElem = document.getElementById('qty-vip');
+    const rowGaSummary = document.getElementById('row-summary-ga');
+    const rowVipSummary = document.getElementById('row-summary-vip');
+    const labelGaSubtotal = document.getElementById('label-ga-subtotal');
+    const labelVipSubtotal = document.getElementById('label-vip-subtotal');
+    const valGaSubtotal = document.getElementById('val-ga-subtotal');
+    const valVipSubtotal = document.getElementById('val-vip-subtotal');
+    const valFees = document.getElementById('val-fees');
+    const valTotal = document.getElementById('val-total');
+    const btnCheckout = document.getElementById('btn-checkout');
+
+    function updateCalculations() {
+      const gaCount = quantities.ga;
+      const vipCount = quantities.vip;
+      const totalTickets = gaCount + vipCount;
+
+      const gaTotal = gaCount * prices.ga;
+      const vipTotal = vipCount * prices.vip;
+      const totalFees = totalTickets > 0 ? (totalTickets * baseFeePerTicket) : 0;
+      const grandTotal = gaTotal + vipTotal + totalFees;
+
+      // Update counters
+      qtyGaElem.textContent = gaCount;
+      qtyVipElem.textContent = vipCount;
+
+      // Toggle GA summary row
+      if (gaCount > 0) {
+        rowGaSummary.classList.remove('hidden');
+        rowGaSummary.classList.add('flex');
+        labelGaSubtotal.textContent = `${gaCount}× General Admission`;
+        valGaSubtotal.textContent = `$${gaTotal.toFixed(2)}`;
+      } else {
+        rowGaSummary.classList.add('hidden');
+        rowGaSummary.classList.remove('flex');
+      }
+
+      // Toggle VIP summary row
+      if (vipCount > 0) {
+        rowVipSummary.classList.remove('hidden');
+        rowVipSummary.classList.add('flex');
+        labelVipSubtotal.textContent = `${vipCount}× VIP Express Pass`;
+        valVipSubtotal.textContent = `$${vipTotal.toFixed(2)}`;
+      } else {
+        rowVipSummary.classList.add('hidden');
+        rowVipSummary.classList.remove('flex');
+      }
+
+      // Update fees & total
+      valFees.textContent = `$${totalFees.toFixed(2)}`;
+      valTotal.textContent = `$${grandTotal.toFixed(2)}`;
+
+      // Checkout button state
+      if (totalTickets === 0) {
+        btnCheckout.disabled = true;
+        btnCheckout.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        btnCheckout.disabled = false;
+        btnCheckout.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    }
+
+    // Attach Stepper Listeners
+    document.querySelectorAll('.btn-qty').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const tier = this.getAttribute('data-tier');
+        const action = this.getAttribute('data-action');
+
+        if (action === 'plus') {
+          if (quantities[tier] < 8) {
+            quantities[tier]++;
+          }
+        } else if (action === 'minus') {
+          if (quantities[tier] > 0) {
+            quantities[tier]--;
+          }
+        }
+        updateCalculations();
+      });
+    });
+
+    // FAQ Accordion Behavior
+    const faqContainer = document.getElementById('faq-container');
+    if (faqContainer) {
+      faqContainer.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('.material-symbols-outlined');
+          const isCurrentlyHidden = content.classList.contains('hidden');
+
+          // Close all open FAQs
+          faqContainer.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          faqContainer.querySelectorAll('.faq-toggle .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+          // Toggle current
+          if (isCurrentlyHidden) {
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          }
+        });
+      });
+    }
+
+    // Wishlist Toggle
+    const favBtn = document.getElementById('btn-favorite');
+    const favIcon = document.getElementById('fav-icon');
+    const favText = document.getElementById('fav-text');
+    let isFaved = false;
+    if (favBtn) {
+      favBtn.addEventListener('click', () => {
+        isFaved = !isFaved;
+        if (isFaved) {
+          favIcon.style.fontVariationSettings = "'FILL' 1";
+          favIcon.classList.add('text-error');
+          favText.textContent = 'Saved';
+        } else {
+          favIcon.style.fontVariationSettings = "'FILL' 0";
+          favIcon.classList.remove('text-error');
+          favText.textContent = 'Save';
+        }
+      });
+    }
+
+    // Follow Organizer Toggle
+    const followBtn = document.getElementById('btn-follow');
+    let isFollowing = false;
+    if (followBtn) {
+      followBtn.addEventListener('click', () => {
+        isFollowing = !isFollowing;
+        if (isFollowing) {
+          followBtn.textContent = 'Following ✓';
+          followBtn.classList.add('bg-primary', 'text-on-primary');
+          followBtn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        } else {
+          followBtn.textContent = '+ Follow';
+          followBtn.classList.remove('bg-primary', 'text-on-primary');
+          followBtn.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        }
+      });
+    }
+
+    // Share Trigger Demo
+    const shareBtn = document.getElementById('btn-share');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Neon Horizon Music Festival 2025',
+            url: window.location.href
+          }).catch(() => {});
+        } else {
+          navigator.clipboard.writeText(window.location.href);
+          const originalText = shareBtn.querySelector('span:last-child').textContent;
+          shareBtn.querySelector('span:last-child').textContent = 'Copied!';
+          setTimeout(() => {
+            shareBtn.querySelector('span:last-child').textContent = originalText;
+          }, 2000);
+        }
+      });
+    }
+
+    // Initial render call
+    updateCalculations();
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-3xl pb-space-2xl mt-space-3xl shadow-[0_-1px_12px_rgba(48,33,125,0.03)]"><div class="max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col pr-0 lg:pr-space-xl"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">Eventora</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-lg leading-relaxed">The premier boutique destination for curated arts, cultural galas, soundscapes, and elevated live events. Elevate your presence and immerse yourself in memorable gatherings.</p><div class="flex items-center gap-space-xs"><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">public</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">campaign</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">photo_camera</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">forum</span></span></div></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Discover</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Explore Events</li><li class="hover:text-primary transition-colors cursor-pointer">Curated Concerts</li><li class="hover:text-primary transition-colors cursor-pointer">Arts &amp; Theatre</li><li class="hover:text-primary transition-colors cursor-pointer">Culinary Experiences</li><li class="hover:text-primary transition-colors cursor-pointer">Festivals</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Organizers</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Create an Event</li><li class="hover:text-primary transition-colors cursor-pointer">Organizer Studio</li><li class="hover:text-primary transition-colors cursor-pointer">Ticketing Solutions</li><li class="hover:text-primary transition-colors cursor-pointer">Access Management</li><li class="hover:text-primary transition-colors cursor-pointer">Pricing &amp; Fees</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Stay Inspired</span><p class="font-body-sm text-body-sm mb-space-sm">Curated weekly digest of unmissable experiences.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center bg-surface-container-lowest rounded-full p-1.5 shadow-[0_2px_8px_rgba(48,33,125,0.04)]"><input class="w-full bg-transparent px-space-sm text-body-sm text-on-surface placeholder:text-outline outline-none" placeholder="Your email address" type="email"/><button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><span class="font-label-sm text-label-sm text-outline-variant px-space-xs">Zero spam. Unsubscribe at any time.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container rounded-2xl px-space-lg py-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Eventora Inc. All rights reserved. Crafted for extraordinary moments.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><span class="hover:text-primary transition-colors cursor-pointer">Privacy Policy</span><span class="hover:text-primary transition-colors cursor-pointer">Terms of Service</span><span class="hover:text-primary transition-colors cursor-pointer">Cookie Settings</span><span class="hover:text-primary transition-colors cursor-pointer">Support</span></div></div></div></footer></body></html>

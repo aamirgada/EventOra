@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface-variant": "#474551", "on-secondary-container": "#5d577c", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#c8bfff", "on-secondary": "#ffffff", "outline-variant": "#c9c4d3", "surface-tint": "#5d51ac", "on-background": "#1a1930", "primary-container": "#30217d", "secondary-fixed-dim": "#cac1ec", "tertiary": "#1d1b2d", "secondary": "#605a7f", "surface": "#fcf8ff", "outline": "#787583", "surface-container": "#efebff", "surface-dim": "#dad7f6", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "tertiary-container": "#323043", "primary-fixed": "#e5deff", "tertiary-fixed": "#e4dff9", "tertiary-fixed-dim": "#c8c3dd", "inverse-on-surface": "#f2eeff", "on-error": "#ffffff", "inverse-primary": "#c8bfff", "on-primary-fixed-variant": "#453893", "surface-bright": "#fcf8ff", "inverse-surface": "#2f2e46", "on-tertiary-container": "#9b97af", "on-tertiary-fixed-variant": "#474459", "on-surface": "#1a1930", "on-tertiary-fixed": "#1b192c", "on-secondary-fixed-variant": "#484266", "background": "#fcf8ff", "error-container": "#ffdad6", "error": "#ba1a1a", "surface-container-highest": "#e3dfff", "on-primary-fixed": "#180064", "on-primary": "#ffffff", "surface-container-low": "#f6f2ff", "primary": "#1a0069", "surface-container-high": "#e9e5ff", "secondary-container": "#d8cffb", "secondary-fixed": "#e6deff", "surface-variant": "#e3dfff", "on-secondary-fixed": "#1c1738", "on-primary-container": "#9a8eee" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "gutter-lg": "2rem", "space-xs": "0.5rem", "gutter": "1.5rem", "margin-sm": "1rem", "space-2xl": "3rem", "space-3xl": "4.5rem", "margin-lg": "3rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-sm": "1rem", "space-sm": "0.75rem", "margin": "1.5rem", "space-2xs": "0.25rem" }, "fontFamily": { "label-md": ["Inter"], "display-hero": ["Manrope"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg-mobile": ["Manrope"], "display-hero-mobile": ["Manrope"], "headline-lg": ["Manrope"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Manrope"], "headline-md": ["Manrope"], "body-sm": ["Inter"] }, "fontSize": { "label-md": ["0.8125rem", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-hero": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-sm": ["0.6875rem", { "lineHeight": "1.1", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["2.5rem", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["1rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }], "label-lg": ["0.9375rem", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["1.25rem", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }], "headline-md": ["1.75rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.875rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(48,33,125,0.05)] transition-all"><div class="h-20 max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold leading-none">Eventora</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:block">Discover. Book. Experience.</span></div></div><nav class="hidden lg:flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-space-2xs rounded-full shadow-[0_1px_3px_rgba(48,33,125,0.03)]" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-full"><a aria-current="page" class="px-space-md py-space-xs transition-all bg-primary-container text-on-primary-container font-semibold rounded-full" data-path="home" href="#">Home</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="explore-events" href="#">Explore Events</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="categories" href="#">Categories</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="my-tickets" href="#">My Tickets</a><a class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="organizer-studio" href="#">Organizer Studio</a></nav><div class="flex items-center gap-space-xs sm:gap-space-sm"><button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center leading-none">3</span></button><button class="relative w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><a class="hidden xl:inline-flex items-center justify-center px-space-lg py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-[0_4px_16px_rgba(48,33,125,0.15)]" data-path="create-event" href="#">Get Started</a><div class="flex items-center pl-space-2xs"><button class="flex items-center rounded-full p-0.5 hover:ring-2 hover:ring-secondary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbvONSaQOhFyJr6QKjPcsM705KAKvkam3OeWOHKOgGyd9TgB7FV9M6ML1s1X69ZwRKukhTm9aTdmLbkxNVFo_CXuSFbN08l9aZk8neRGVSlME6kvHXUZ4WaH-JyytDUmDJw6Dyyr1_MC9P9DXXeNxLceOfiAwVgZyyacZHoIgQtBJbYTAdiUsRK5CYbiT6ivqNQFunS3WwECt6aeA8Wd0f_5G2wuGm68Y7US37c3jQHeqg4I_4Y-X2Pw"/></button></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Hero Container -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg pt-space-md pb-space-2xl">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container via-surface-container-low to-secondary-container p-space-lg md:p-space-2xl lg:p-space-3xl shadow-md">
+<!-- Decorative ambient glows -->
+<div class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary-container/60 blur-3xl"></div>
+<div class="pointer-events-none absolute -bottom-28 -left-12 w-80 h-80 rounded-full bg-primary-fixed-dim/40 blur-2xl"></div>
+<div class="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm mb-space-lg">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>Discover · Book · Experience</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-hero text-headline-lg md:text-display-hero tracking-tight text-on-surface mb-space-md">
+          Discover Events That Make <span class="text-primary-container">Every Moment Count</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mb-space-2xl">
+          Find incredible concerts, tech summits, creative masterclasses, and cultural spectacles curated meticulously for your curious mind.
+        </p>
+<!-- Floating Multi-segment Filter Search Bar -->
+<div class="w-full bg-surface-container-lowest rounded-2xl md:rounded-full p-2.5 shadow-xl transition-all hover:shadow-2xl mb-space-xl">
+<form class="flex flex-col md:flex-row items-stretch md:items-center gap-2" id="hero-search-form">
+<!-- Event Name / Keyword -->
+<div class="flex-1 flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low focus-within:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline outline-none" placeholder="Search events, artists, venues..." type="text"/>
+</div>
+<!-- Location Selector -->
+<div class="flex-1 flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low focus-within:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px]">location_on</span>
+<select class="w-full bg-transparent text-body-sm font-body-sm text-on-surface outline-none cursor-pointer appearance-none">
+<option value="sf">San Francisco, CA</option>
+<option value="ny">New York, NY</option>
+<option value="lon">London, UK</option>
+<option value="online">Online / Global Stream</option>
+</select>
+<span class="material-symbols-outlined text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Category Selector -->
+<div class="flex-1 flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low focus-within:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px]">category</span>
+<select class="w-full bg-transparent text-body-sm font-body-sm text-on-surface outline-none cursor-pointer appearance-none">
+<option value="all">All Categories</option>
+<option value="music">Music &amp; Concerts</option>
+<option value="tech">Technology &amp; AI</option>
+<option value="workshop">Workshops</option>
+<option value="arts">Arts &amp; Culture</option>
+</select>
+<span class="material-symbols-outlined text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Date Selector -->
+<div class="flex-1 flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container-low focus-within:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px]">calendar_today</span>
+<select class="w-full bg-transparent text-body-sm font-body-sm text-on-surface outline-none cursor-pointer appearance-none">
+<option value="weekend">This Weekend</option>
+<option value="7days">Next 7 Days</option>
+<option value="month">This Month</option>
+<option value="custom">Anytime</option>
+</select>
+<span class="material-symbols-outlined text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Search Action CTA -->
+<button class="px-space-xl py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-200 flex items-center justify-center gap-space-xs shrink-0 shadow-md hover:shadow-lg active:scale-95" type="submit">
+<span>Search Events</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Social Proof Metric Row -->
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<div class="flex items-center -space-x-3">
+<div class="w-9 h-9 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of an energetic young female music festival attendee smiling broadly against golden hour lighting with soft lavender hair tint." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbTVFwfhrFGnz4vlt60GULl5cAVaRRfJ4uS1orM6gFSIz2ghUO5Cea7JEU99gVG1Jw0CEWCBYby8mO-mslyAM9lXxZ9V6Es9mg3rZTLu7IO0MoC9Jv63TWHXjmjB6QmzO2vISLoO2t3iT8pD-g2MPYiwnuAdo3vwf95ZOfdOnG5ZZyFW8Sb_zgfNfcBCptxyvS6bgdRymnzHDZAGNBVM_Llf9y9VvoTBT9pHsxOrxc1g-TKHxI3lyvOw"/>
+</div>
+<div class="w-9 h-9 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Charming outdoor candid portrait of an arts enthusiast man smiling in contemporary purple jacket at an evening concert." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZU4uT2zTH7pp9T27cIcbWoPPLlLMxq0oyq1LgghIyKHB_hCNIIHNIMXwrKv_3CllBpRgkIf8VEedcRqBvofWWGYfr9ixgzpOX3tgFKuCztOnlIeEifIXgSwoMPrWHsCmsLePypcwAitRvxprVw_fiRJy910_yHkzHh4t0zsSPDDZqgyYFDIFOjCprDGiAtOKnxMFpmkouymU9lfumczDqBFitt1rWpwNNHzqlliJH-NQjbEJhzNmCYg"/>
+</div>
+<div class="w-9 h-9 rounded-full overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of a modern tech founder attendee with glasses smiling warmly against a soft purple studio backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBULJButwl5HZMlb9XzpcD2xQ8SoZbmYV8gn5OxrZYtWBMNCSalLaoABEmn3RNkfQ5DDee_Rg6CGWDkvHTrlcDLuloA4i-oiHgCfPT3A8jGoN5P4r_kCGK35tsd7ay_uY3JXFft8pDD99lIDmry9eMurhWi1BEsXslY41otctopVzX6Ey4PRcidGSYtGvCzdq99b4awyeo1fevkxXVYDCaOHA08-_knzzemNpLI-OyPEKdvUUOSqHbwpA"/>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[11px] shadow-sm">
+              +120k
+            </div>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span><strong>4.9/5</strong> satisfaction · Join over 120,000+ happy attendees</span>
+</div>
+</div>
+</div>
+<!-- Hero Visual Showcase Ribbon -->
+<div class="mt-space-2xl relative rounded-2xl overflow-hidden shadow-lg h-64 md:h-80 w-full group">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="Panoramic breathtaking view of a modern amphitheater music festival at twilight with dynamic purple and violet laser light show, illuminated stage, and cheering crowd hands in air." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn4kXdqYEVTDarUHHyu6weQs-Anj9q_YZVEjyrNbc6a-jaKXtaBDffvd4ws9bJcCrPsQuMyJ_zONvd_pLAKAwuZJzr6JCQRAc14adfO4Z0-LaMqpR0U75d6ysY2IdnSFTOTAbmmOE3pEKRPiPHwwp-RdhSXypeUW8kQZLW9Mb_jcpUZw0k5ChuzkHk3JRHhFTaL3DmZvR-lPbE93WKyqlvyQKeIMnvEsl-IaZiQGARUiYx78EC-fLLfA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-lg md:p-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md text-on-primary">
+<div>
+<span class="inline-block px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">Now Trending</span>
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight">Summer Solstice Soundscape 2025</h2>
+<p class="font-body-sm text-body-sm text-surface-container-high">3 Days of Ambient Melodies, Spatial Sound Installations &amp; Organic Food</p>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-secondary-container transition-all shrink-0" href="#">
+<span>View Lineup</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Key Benefits Cards -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Benefit 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verified Events</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Curated and authentic experiences with verified premier organizers and direct guarantees.
+        </p>
+</div>
+<!-- Benefit 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">lock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Secure Booking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Instant PCI-compliant checkout with 100% money-back buyer safeguard policy.
+        </p>
+</div>
+<!-- Benefit 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">confirmation_number</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Instant Digital Tickets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Apple &amp; Google Wallet compatibility, instant sync, and offline wallet access.
+        </p>
+</div>
+<!-- Benefit 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[26px]">qr_code_scanner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Easy Check-in</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Contactless, zero-lag scanning at entry gates to get you into the action effortlessly.
+        </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Why Choose Eventora (2 Columns) -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container px-space-sm py-1 rounded-full bg-secondary-container mb-space-sm">Why Choose Eventora</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mb-space-sm">
+          More Than Just an Event
+        </h2>
+<p class="font-body-lg text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
+          From discovering your next favorite artist or industry leader to seamless entry with high-tech digital passes, everything is designed to make event booking effortless.
+        </p>
+<!-- Bullet List -->
+<div class="flex flex-col gap-space-sm w-full mb-space-xl">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Curated Quality Over Quantity</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We vet every single producer, community guild, and showcase host.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Zero Hidden Surcharges</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Clear, upfront ticket prices without surprise convenience fees at checkout.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Smart Group Reserving</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Split payments effortlessly with friends and sit together every time.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary-container text-[22px] shrink-0 mt-0.5">check_circle</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Direct Artist Support</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A larger portion of every ticket goes directly into the hands of performers.</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-xl py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-md" href="#">
+<span>Explore All Events</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Right Column: Visual Showcase Card -->
+<div class="lg:col-span-6 relative">
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-md shadow-xl overflow-hidden">
+<div class="relative h-96 w-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Sophisticated modern concert stage with an orchestra bathed in violet spotlights, ethereal ambient smoke, and an engaged audience under an architectural glass dome." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO--5qv_N6MW8HIQBrwCvAlAb6lglrY4ry9ncbkMy6pIn2k0Hd5IYVbUBfnmJUH5Mo5w7T1yrg9AkEfbhu38_ieea5fy_8CSzo_KxUingHO6RMDw7OFB1iy5gtczeaiiPGK-Un3y50v7HVD2HHPBm_HHYSCB2PwrAfqC9DwUb3NYsSUVaDwq75YAGa1x98ZOI9HhA_TSuwiWwagMHG6u3xLXzM9b9bjF7aobejRak50E3Ljgn7zbxQag"/>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-full font-label-sm text-label-sm text-primary-container shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span>Selling Out Fast · 94% Booked</span>
+</div>
+</div>
+<!-- Ticket Mock Overlay Detail -->
+<div class="mt-space-md p-space-md bg-surface-container rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex flex-col items-center justify-center font-headline-sm text-headline-sm leading-none shrink-0">
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider text-secondary-container">AUG</span>
+<span class="font-bold">18</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface truncate">Symphonic Odyssey Live</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Palace of Fine Arts, San Francisco</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$78</span>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest hover:bg-secondary-container text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Floating Testimonial Pill Offset -->
+<div class="hidden sm:flex absolute -bottom-6 -left-6 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm px-space-md rounded-full shadow-lg items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">100% Authentic Ticket Guarantee</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Featured Events (Events Worth Experiencing) -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container px-space-sm py-1 rounded-full bg-secondary-container mb-space-xs inline-block">Curated Spotlight</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-bold tracking-tight">Events Worth Experiencing</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Handpicked experiences trending this week</p>
+</div>
+<!-- Filter Tabs -->
+<div class="inline-flex p-1 rounded-full bg-surface-container self-start md:self-auto overflow-x-auto" id="filter-tabs-container">
+<button class="tab-btn px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all" data-category="all" type="button">All</button>
+<button class="tab-btn px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-category="music" type="button">Music</button>
+<button class="tab-btn px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-category="tech" type="button">Tech</button>
+<button class="tab-btn px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-category="workshops" type="button">Workshops</button>
+<button class="tab-btn px-space-md py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" data-category="arts" type="button">Art &amp; Food</button>
+</div>
+</div>
+<!-- 3 Featured Event Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant outdoor electronic music festival stage illuminated with intense neon violet, teal lasers, and thousands of hands swaying rhythmically in Golden Gate Park at night." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWzxFQG2pR2hEkyYjZZFT1Pw6qBb7FDGQE0owlp4_AOuyX-I9iWTqvvVLLhCvM1sYmqFK4s7JHemQ5q8vb9dN7KTOfkWf9SJMgbWpbUiM3rIp14JL775gqHheBI9DzQyB6bQ5BPr2De-xuMdG6QupGaWwbrqdXSkgKaKIZP7IgQGlpswxaSOsNFCXcTb-DLQTo_SMV_YR3OpX3T8tme7NzLHIYIsAvK-u-N6sKTskFcRpyf1vw92slIQ"/>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-amber-100 text-amber-900 font-label-sm text-label-sm font-bold shadow-sm">
+            Selling Fast
+          </div>
+<button aria-label="Favorite event" class="favorite-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm px-space-sm py-1 rounded-lg bg-surface-container-lowest/95 backdrop-blur-sm text-primary-container font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>July 18–20</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Golden Gate Park, SF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs group-hover:text-primary transition-colors">
+              Neon Horizon Electronic Music Festival
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+              Over 40 world-class electronic sound pioneers, multi-sensory light domes, and sustainable botanical food courts.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting at</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$89</span>
+</div>
+<button class="px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" type="button">
+              View Details
+            </button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern tech conference auditorium stage with a keynote speaker standing before high-resolution holographic displays featuring AI neural networks and data visualizations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiZsXpH711gih5AXY_je43gFEetbxhh6bKhHhTh7NAK0HQDEQtqBjtceYuuah5up6tcoU70EHohKTh_5pgZmV2Oj47jcVXnpTCabAuPlsKQ3GOjYx-l6bNdUOFKBOoEOH_YHyRzECRo0R40vOyHcIHEAsz6ODlCtjiywinZ5NbFt9CK8qjFbKCFOAB4-VU0DEUagy9A0_VSH6BasDdH-xrb7lIRONXy-oTc73Cux_cuDhq0gNoGbsllg"/>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-bold shadow-sm">
+            Early Bird
+          </div>
+<button aria-label="Favorite event" class="favorite-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm px-space-sm py-1 rounded-lg bg-surface-container-lowest/95 backdrop-blur-sm text-primary-container font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Aug 12 · 9:00 AM</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Moscone Center, SF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs group-hover:text-primary transition-colors">
+              Global AI &amp; Web Innovations Summit 2025
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+              Connect with 2,500+ leaders, researchers, and venture builders shaping agentic AI, spatial computing, and next-gen tech.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting at</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$149</span>
+</div>
+<button class="px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" type="button">
+              View Details
+            </button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sunlit artisanal culinary loft with a master barista pouring latte art alongside an assortment of fresh baked pastries, ceramic cups, and warm roasted coffee beans." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJZBtklOx5KeH-VplwHz-1UO-dXG6UkygL7CFuYP6jV_jX2QVqVb8DQX1qW752mSwppwT-z4ijQOsRI6B8yX_rlyfhQN_azVfksKOJ6NqyMhVKz-1Z96DctUOT01tEVrwETgpy2TBGuMNcnKKfjrw1QObT5KEIiEYdZh6NgHMVab9KDr2l0Ec9uiaRLhscp0o8T56KIgXCeSuAAkV_nfapEUlO9x5uTuYm0rlYHfvLQ76qoAVCrwtfg"/>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-purple-100 text-purple-900 font-label-sm text-label-sm font-bold shadow-sm">
+            Limited Seats
+          </div>
+<button aria-label="Favorite event" class="favorite-btn absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface hover:text-error hover:bg-surface-container-lowest flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute bottom-space-sm left-space-sm px-space-sm py-1 rounded-lg bg-surface-container-lowest/95 backdrop-blur-sm text-primary-container font-label-sm text-label-sm shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>July 25 · 2:00 PM</span>
+</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>Mission District, SF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs group-hover:text-primary transition-colors">
+              Artisan Coffee &amp; Culinary Masterclass
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-md">
+              Hands-on sensory cupping, precision pour-over techniques, and savory pairing curation guided by champion roasters.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Starting at</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">$45</span>
+</div>
+<button class="px-space-md py-2 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors" type="button">
+              View Details
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Browse by Category -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-2xl">
+<div class="text-center max-w-xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container px-space-sm py-1 rounded-full bg-secondary-container mb-space-xs inline-block">Curated Worlds</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-bold tracking-tight">Browse by Category</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Find the exact experience tailored to your weekend mood</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-space-md">
+<!-- Category 1 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">music_note</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Music &amp; Concerts</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">140+ events</span>
+</a>
+<!-- Category 2 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">smart_toy</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Technology &amp; AI</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">85+ events</span>
+</a>
+<!-- Category 3 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Business &amp; Networking</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">60+ events</span>
+</a>
+<!-- Category 4 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Workshops &amp; Classes</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">110+ events</span>
+</a>
+<!-- Category 5 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">fitness_center</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Sports &amp; Fitness</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">45+ events</span>
+</a>
+<!-- Category 6 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Art &amp; Culture</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">75+ events</span>
+</a>
+<!-- Category 7 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">restaurant</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Food &amp; Lifestyle</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">90+ events</span>
+</a>
+<!-- Category 8 -->
+<a class="group p-space-lg rounded-2xl bg-surface-container hover:bg-surface-container-high transition-all flex flex-col items-center text-center shadow-sm hover:shadow-md" href="#">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest text-primary-container flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[28px]">diversity_3</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-1 group-hover:text-primary">Community &amp; Meetups</h4>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant">50+ events</span>
+</a>
+</div>
+</section>
+<!-- Section 6: How It Works Section -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-2xl">
+<div class="text-center max-w-xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container px-space-sm py-1 rounded-full bg-secondary-container mb-space-xs inline-block">Frictionless Path</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-bold tracking-tight">Your Next Experience in 3 Easy Steps</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Designed from the ground up for zero hassle</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold mb-space-lg shadow-sm">
+          01
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-bold">Discover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Search and filter thousands of verified local, international, and live-streamed experiences with smart taste recommendations.
+        </p>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-semibold">
+<span>AI-Powered Matching</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold mb-space-lg shadow-sm">
+          02
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-bold">Book Your Tickets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Select preferred seating tiers, add attendee names, split tabs with colleagues, and check out securely in seconds.
+        </p>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-semibold">
+<span>One-Tap Apple &amp; Google Pay</span>
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold mb-space-lg shadow-sm">
+          03
+        </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-bold">Show Up &amp; Enjoy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Access your digital ticket QR code anytime—even completely offline—for instant contactless turnstile check-in.
+        </p>
+<div class="mt-space-lg pt-space-md flex items-center gap-space-xs text-primary font-label-sm text-label-sm font-semibold">
+<span>Zero Printing Required</span>
+<span class="material-symbols-outlined text-[16px]">eco</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Attendee Reviews & Social Proof -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container px-space-sm py-1 rounded-full bg-secondary-container mb-space-xs inline-block">Real Experiences</span>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-bold tracking-tight">Loved by Event Connoisseurs</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Hear what real attendees say about their Eventora journeys</p>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous review" class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">west</span>
+</button>
+<button aria-label="Next review" class="w-10 h-10 rounded-full bg-primary-container text-on-primary hover:bg-primary flex items-center justify-center shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">east</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg leading-relaxed">
+            “The check-in was literally effortless. No glitching apps, no 30-minute queue outside in the cold. Just one tap and we were straight into the sound immersion dome.”
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md bg-surface-container-low/50 -mx-space-xl -mb-space-xl p-space-lg rounded-b-2xl">
+<div class="w-11 h-11 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of a smiling female designer in her late 20s with short dark bob haircut against soft lavender background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAi1Wr1avcxHC9a1GE5Eys6PH9v5aULuhG_OKnSK0Y2_Jg4b4ljizWURBZNRc3CYQ9CoEU7hMjY2jAfGWht2gQdUB2xmvqjJ4JZxZLmMiZqlGxWtk6s4SFeDgzkF2Qo5Y-bF0j8_lAm5fwAUMgEC-1HFpF60mj3KolBf0lFWtB99h0-PHIj9bOyMTNxk_usoHBOmLgEesnJYSj4xdY8V00SAAuYiTEanE5FduA3BVXKBXM5VTR9EBZ2A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Elena Rostova</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Attended Aurora Echoes Festival</span>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg leading-relaxed">
+            “Found an intimate culinary workshop that wasn’t featured on any other ticket platform. Eventora genuinely curates events worth your precious evening time.”
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md bg-surface-container-low/50 -mx-space-xl -mb-space-xl p-space-lg rounded-b-2xl">
+<div class="w-11 h-11 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Headshot of a distinguished architect with salt-and-pepper beard wearing a charcoal sweater." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMQgZOAFrMXibMpApbTQ8VgLpPXWPGG25Y3RRp2ilEgiyMnMhHC1wZBD_ycZTTgic12LDi29_FjbzQwEb7_G1XdqCUWuL-izMLHDvkI6gco6EwmQudcGfaRJLe4BJNsqOQV0DKl63qDw-nxe19QgsoB4TLPP8x5fHcMY3uzP3jtkAxNGhy51hOyuDQFVFu-_YF43yqXkHlnV4R1MjS7yDpt4Yj_j-i4yYephRQubqbBVBN4MQpeUlDqg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Marcus Vance</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Attended Sourdough &amp; Fermentation Masterclass</span>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex text-primary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[28px]">format_quote</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic mb-space-lg leading-relaxed">
+            “Booking tech summit passes for our 12-person team was effortless. Group seating reservations and receipt reconciliations were sent straight to our finance inbox.”
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md bg-surface-container-low/50 -mx-space-xl -mb-space-xl p-space-lg rounded-b-2xl">
+<div class="w-11 h-11 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of an energetic product manager woman with friendly smile wearing a violet blazer." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxhjtDsQ4Hpn33OUFr9wN6fK_WwWWl70zStPWqYw_OKe0Op04sRiFIg0IeaM4xuJCLramewNf1qHbVzIjaDYermez-aFm5NvV7COcsISkMPkJxT6YQzxgXvUqxNOINyjOXlQo9Vk2ja2-2xqpMdSgQNZAP9c3KCjvuBIqAnad3DVcDv6szd__yCYhg0d5iCs4nKuszMgpneS8vzD4lImeR7SaHoyhQi9g_NRjgkz-gdlJdClLScvK0VQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface truncate">Kavita Sharma</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Attended Global AI &amp; Web Summit</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Final CTA Banner -->
+<section class="max-w-[1280px] w-full mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-xl mb-space-xl">
+<div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-container via-primary to-primary-container text-on-primary p-space-xl md:p-space-3xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-xl">
+<!-- Background Ambient Glow -->
+<div class="pointer-events-none absolute top-0 right-0 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute bottom-0 left-10 w-80 h-80 bg-primary-fixed-dim/15 rounded-full blur-2xl"></div>
+<div class="relative z-10 max-w-xl text-center md:text-left">
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg font-bold tracking-tight mb-space-xs">
+          Ready for Your Next Adventure?
+        </h2>
+<p class="font-body-lg text-body-md md:text-body-lg text-surface-container-high">
+          Join thousands discovering unforgettable live moments every single day. Or bring your own world to our stage.
+        </p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row items-center gap-space-sm w-full md:w-auto shrink-0">
+<a class="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-surface-container-lowest text-primary-container font-label-md text-label-md hover:bg-secondary-container transition-all text-center shadow-lg font-semibold" href="#">
+          Explore Events
+        </a>
+<a class="w-full sm:w-auto px-space-xl py-3.5 rounded-full bg-primary/40 hover:bg-primary/70 text-on-primary font-label-md text-label-md transition-all text-center" href="#">
+          Become an Organizer
+        </a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive filter tabs
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterContainer = document.getElementById('filter-tabs-container');
+    if (filterContainer) {
+      const buttons = filterContainer.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+    }
+
+    // Toggle favorite state on cards
+    const favButtons = document.querySelectorAll('.favorite-btn');
+    favButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          const isFilled = icon.style.fontVariationSettings?.includes("'FILL' 1");
+          if (isFilled) {
+            icon.style.fontVariationSettings = "'FILL' 0";
+            btn.classList.remove('text-error');
+          } else {
+            icon.style.fontVariationSettings = "'FILL' 1";
+            btn.classList.add('text-error');
+          }
+        }
+      });
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-3xl pb-space-2xl mt-space-3xl shadow-[0_-1px_12px_rgba(48,33,125,0.03)]"><div class="max-w-[1280px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col pr-0 lg:pr-space-xl"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Eventora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XKbdIyZCBCt02zRk6NPTSdooyTuKK7n7sRZ0vXksuxmxGsAhYmz05-bOtWdhSutNoW83H8gyYNCXAkoYyIzstIRMNvBVo4txZ0K2hCmE5NZI7Jcod6_lY_1xNijWdU-7NRyKojyMyJA_4-GL25eodzkVBUpk2Ec2QAl9FjAjUFG7nzlIKUf-hKcgzRH4z5z-0FgqtnYgsV_u5s8maqQ6U6OIjosaGBgByRXHZ4jYfBlok_ZPsRoqPDn-VG"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">Eventora</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-lg leading-relaxed">The premier boutique destination for curated arts, cultural galas, soundscapes, and elevated live events. Elevate your presence and immerse yourself in memorable gatherings.</p><div class="flex items-center gap-space-xs"><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">public</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">campaign</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">photo_camera</span></span><span class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">forum</span></span></div></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Discover</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Explore Events</li><li class="hover:text-primary transition-colors cursor-pointer">Curated Concerts</li><li class="hover:text-primary transition-colors cursor-pointer">Arts &amp; Theatre</li><li class="hover:text-primary transition-colors cursor-pointer">Culinary Experiences</li><li class="hover:text-primary transition-colors cursor-pointer">Festivals</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Organizers</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="hover:text-primary transition-colors cursor-pointer">Create an Event</li><li class="hover:text-primary transition-colors cursor-pointer">Organizer Studio</li><li class="hover:text-primary transition-colors cursor-pointer">Ticketing Solutions</li><li class="hover:text-primary transition-colors cursor-pointer">Access Management</li><li class="hover:text-primary transition-colors cursor-pointer">Pricing &amp; Fees</li></ul></div><div><span class="font-label-lg text-label-lg text-on-surface font-semibold block mb-space-md">Stay Inspired</span><p class="font-body-sm text-body-sm mb-space-sm">Curated weekly digest of unmissable experiences.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center bg-surface-container-lowest rounded-full p-1.5 shadow-[0_2px_8px_rgba(48,33,125,0.04)]"><input class="w-full bg-transparent px-space-sm text-body-sm text-on-surface placeholder:text-outline outline-none" placeholder="Your email address" type="email"/><button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-primary transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><span class="font-label-sm text-label-sm text-outline-variant px-space-xs">Zero spam. Unsubscribe at any time.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container rounded-2xl px-space-lg py-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 Eventora Inc. All rights reserved. Crafted for extraordinary moments.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><span class="hover:text-primary transition-colors cursor-pointer">Privacy Policy</span><span class="hover:text-primary transition-colors cursor-pointer">Terms of Service</span><span class="hover:text-primary transition-colors cursor-pointer">Cookie Settings</span><span class="hover:text-primary transition-colors cursor-pointer">Support</span></div></div></div></footer></body></html>
